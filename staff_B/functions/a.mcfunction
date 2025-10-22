@@ -1,0 +1,16 @@
+particle minecraft:basic_flame_particle ~-1.0 ~0.1 ~-1.0
+particle minecraft:basic_flame_particle ~-1.0 ~0.1 ~-0.5
+particle minecraft:basic_flame_particle ~-1.0 ~0.1 ~0.0
+particle minecraft:basic_flame_particle ~-1.0 ~0.1 ~0.5
+particle minecraft:basic_flame_particle ~-1.0 ~0.1 ~1.0
+particle minecraft:basic_flame_particle ~-0.5 ~0.1 ~-1.0
+particle minecraft:basic_flame_particle ~-0.5 ~0.1 ~1.0
+particle minecraft:basic_flame_particle ~0.0 ~0.1 ~-1.0
+particle minecraft:basic_flame_particle ~0.0 ~0.1 ~1.0
+particle minecraft:basic_flame_particle ~0.5 ~0.1 ~-1.0
+particle minecraft:basic_flame_particle ~0.5 ~0.1 ~1.0
+particle minecraft:basic_flame_particle ~1.0 ~0.1 ~-1.0
+particle minecraft:basic_flame_particle ~1.0 ~0.1 ~-0.5
+particle minecraft:basic_flame_particle ~1.0 ~0.1 ~0.0
+particle minecraft:basic_flame_particle ~1.0 ~0.1 ~0.5
+particle minecraft:basic_flame_particle ~1.0 ~0.1 ~1.0

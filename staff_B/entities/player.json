@@ -1,0 +1,1869 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:player",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"staff",
+					"dn"
+				]
+			},
+			"animations": {
+				"staff": "controller.animation.staff",
+				"dn": "controller.animation.dn"
+			} 
+		},
+		"component_groups": {
+			"base":{
+				"minecraft:variant":{
+					"value": 0
+				}
+			},
+			"minecraft:add_bad_omen": {
+				"minecraft:spell_effects": {
+					"add_effects": [{
+					"effect": "bad_omen",
+					"duration": 6000,
+							"display_on_screen_animation": true
+					}]
+				},
+				"minecraft:timer": {
+					"time": [ 0.0, 0.0 ],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:clear_add_bad_omen",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:clear_bad_omen_spell_effect": {
+				"minecraft:spell_effects": {}
+			},
+			"minecraft:raid_trigger": {
+				"minecraft:raid_trigger": {
+					"triggered_event": {
+						"event": "minecraft:remove_raid_trigger",
+						"target": "self"
+					}
+				},
+				"minecraft:spell_effects": {
+					"remove_effects": "bad_omen"
+				}
+			}
+    	},
+		"components": {
+			"minecraft:variant":{
+				"value": 0
+			},
+          	"minecraft:environment_sensor": [
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+								{
+									"test": "has_mob_effect",
+              						"subject": "self",
+              						"value": "bad_omen"
+            					},
+            					{
+           	   					"test": "is_in_village",
+              						"subject": "self",
+              						"value": true
+           						}
+							]
+            			},
+            			"event": "minecraft:trigger_raid"
+          			}
+        		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:dict"
+                				}
+              				]
+            			},
+            			"event": "dict"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:dict"
+                				}
+              				]
+            			},
+            			"event": "stop_dict"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:stand"
+                				}
+              				]
+            			},
+            			"event": "stand"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:stand"
+                				}
+              				]
+            			},
+            			"event": "stop_stand"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standa"
+                				}
+              				]
+            			},
+            			"event": "standa"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standa"
+                				}
+              				]
+            			},
+            			"event": "stop_standa"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standb"
+                				}
+              				]
+            			},
+            			"event": "standb"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standb"
+                				}
+              				]
+            			},
+            			"event": "stop_standb"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standc"
+                				}
+              				]
+            			},
+            			"event": "standc"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standc"
+                				}
+              				]
+            			},
+            			"event": "stop_standc"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standd"
+                				}
+              				]
+            			},
+            			"event": "standd"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standd"
+                				}
+              				]
+            			},
+            			"event": "stop_standd"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:stande"
+                				}
+              				]
+            			},
+            			"event": "stande"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:stande"
+                				}
+              				]
+            			},
+            			"event": "stop_stande"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standf"
+                				}
+              				]
+            			},
+            			"event": "standf"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standf"
+                				}
+              				]
+            			},
+            			"event": "stop_standf"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standg"
+                				}
+              				]
+            			},
+            			"event": "standg"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standg"
+                				}
+              				]
+            			},
+            			"event": "stop_standg"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standh"
+                				}
+              				]
+            			},
+            			"event": "standh"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standh"
+                				}
+              				]
+            			},
+            			"event": "stop_standh"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standi"
+                				}
+              				]
+            			},
+            			"event": "standi"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standi"
+                				}
+              				]
+            			},
+            			"event": "stop_standi"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standj"
+                				}
+              				]
+            			},
+            			"event": "standj"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standj"
+                				}
+              				]
+            			},
+            			"event": "stop_standj"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standk"
+                				}
+              				]
+            			},
+            			"event": "standk"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standk"
+                				}
+              				]
+            			},
+            			"event": "stop_standk"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standl"
+                				}
+              				]
+            			},
+            			"event": "standl"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standl"
+                				}
+              				]
+            			},
+            			"event": "stop_standl"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standm"
+                				}
+              				]
+            			},
+            			"event": "standm"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standm"
+                				}
+              				]
+            			},
+            			"event": "stop_standm"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standn"
+                				}
+              				]
+            			},
+            			"event": "standn"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standn"
+                				}
+              				]
+            			},
+            			"event": "stop_standn"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:stando"
+                				}
+              				]
+            			},
+            			"event": "stando"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:stando"
+                				}
+              				]
+            			},
+            			"event": "stop_stando"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standp"
+                				}
+              				]
+            			},
+            			"event": "standp"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standp"
+                				}
+              				]
+            			},
+            			"event": "stop_standp"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standq"
+                				}
+              				]
+            			},
+            			"event": "standq"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standq"
+                				}
+              				]
+            			},
+            			"event": "stop_standq"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standr"
+                				}
+              				]
+            			},
+            			"event": "standr"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standr"
+                				}
+              				]
+            			},
+            			"event": "stop_standr"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:stands"
+                				}
+              				]
+            			},
+            			"event": "stands"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:stands"
+                				}
+              				]
+            			},
+            			"event": "stop_stands"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standt"
+                				}
+              				]
+            			},
+            			"event": "standt"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standt"
+                				}
+              				]
+            			},
+            			"event": "stop_standt"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:standu"
+                				}
+              				]
+            			},
+            			"event": "standu"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:standu"
+                				}
+              				]
+            			},
+            			"event": "stop_standu"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:teleport"
+                				}
+              				]
+            			},
+            			"event": "teleport"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:teleport"
+                				}
+              				]
+            			},
+            			"event": "stop_teleport"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:excalibur"
+                				}
+              				]
+            			},
+            			"event": "excalibur"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:excalibur"
+                				}
+              				]
+            			},
+            			"event": "stop_excalibur"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:rockalibur"
+                				}
+              				]
+            			},
+            			"event": "rockalibur"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:rockalibur"
+                				}
+              				]
+            			},
+            			"event": "stop_rockalibur"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:ls_on"
+                				}
+              				]
+            			},
+            			"event": "ls_on"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:ls_on"
+                				}
+              				]
+            			},
+            			"event": "stop_ls_on"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:ls_off"
+                				}
+              				]
+            			},
+            			"event": "ls_off"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:ls_off"
+                				}
+              				]
+            			},
+            			"event": "stop_ls_off"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:java_sword"
+                				}
+              				]
+            			},
+            			"event": "java_sword"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:java_sword"
+                				}
+              				]
+            			},
+            			"event": "stop_java_sword"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:red_brick"
+                				}
+              				]
+            			},
+            			"event": "red_brick"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:red_brick"
+                				}
+              				]
+            			},
+            			"event": "stop_red_brick"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:jetpack"
+                				}
+              				]
+            			},
+            			"event": "jetpack"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:jetpack"
+                				}
+              				]
+            			},
+            			"event": "stop_jetpack"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:zzst"
+                				}
+              				]
+            			},
+            			"event": "zzst"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:zzst"
+                				}
+              				]
+            			},
+            			"event": "stop_zzst"
+					}
+          		},
+				{
+	        		"on_environment": {
+            			"filters": {
+              				"all_of": [
+                				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                   					"operator": "=",
+                 					"domain": "hand",
+                  					"value": "items:hyan"
+                				}
+              				]
+            			},
+            			"event": "hyan"
+          			}
+        		},
+				{
+          			"on_environment": {
+            			"filters": {
+              				"all_of": [
+               	 				{
+                  					"test": "has_equipment",
+                  					"subject": "self",
+                 		 			"operator": "<>",
+                  					"domain": "hand",
+                  					"value": "items:hyan"
+                				}
+              				]
+            			},
+            			"event": "stop_hyan"
+					}
+          		}
+      		],
+      		"minecraft:type_family": {
+        		"family": [ "player" ]
+      		},
+      		"minecraft:is_hidden_when_invisible": {},
+      		"minecraft:loot": {
+        		"table": "loot_tables/empty.json"
+      		},
+      		"minecraft:collision_box": {
+        		"width": 0.6,
+        		"height": 1.8
+      		},
+      		"minecraft:can_climb": {},
+      		"minecraft:movement": {
+        		"value": 0.1
+      		},
+      		"minecraft:attack": {
+        		"damage": 1
+      		},
+      		"minecraft:player.saturation": {
+        		"value": 20
+      		},
+      		"minecraft:player.exhaustion": {
+        		"value": 0,
+        		"max": 4
+      		},
+      		"minecraft:player.level": {
+        		"value": 0,
+        		"max": 24791
+      		},
+      		"minecraft:player.experience": {
+        		"value": 0,
+        		"max": 1
+      		},
+      		"minecraft:breathable": {
+        		"totalSupply": 15,
+        		"suffocateTime": -1,
+        		"inhaleTime": 3.75,
+        		"generatesBubbles": false
+      		},
+      		"minecraft:nameable": {
+        		"alwaysShow": true,
+        		"allowNameTagRenaming": false
+      		},
+      		"minecraft:physics": {},
+      		"minecraft:insomnia": {
+        		"days_until_insomnia": 3
+      		},
+      		"minecraft:rideable": {
+        		"seat_count": 2,
+        		"family_types": [
+          			"parrot_tame"
+    			],
+        		"pull_in_entities": true,
+        		"seats": [
+          			{
+						"position": [ 0.4, -0.15, 0.04 ],
+						"min_rider_count": 0,
+						"max_rider_count": 0,
+						"lock_rider_rotation": 0
+          			},
+          			{
+						"position": [ -0.4, -0.15, 0.04 ],
+						"min_rider_count": 1,
+						"max_rider_count": 2,
+						"lock_rider_rotation": 0
+          			}
+        		]
+      		},
+      		"minecraft:scaffolding_climber": {
+      		}
+    	},
+    	"events": {
+			"dict": {
+        		"add": {
+        			"component_groups": [
+          		  		"dict"
+          			]
+        		}
+      		},
+        	"stop_dict": {
+        		"remove": {
+          			"component_groups": [
+            			"dict"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+        	"stand": {
+        		"add": {
+        			"component_groups": [
+          		  		"stand"
+          			]
+        		}
+      		},
+        	"stop_stand": {
+        		"remove": {
+          			"component_groups": [
+            			"stand"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standa": {
+        		"add": {
+        			"component_groups": [
+          		  		"standa"
+          			]
+        		}
+      		},
+        	"stop_standa": {
+        		"remove": {
+          			"component_groups": [
+            			"standa"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standb": {
+        		"add": {
+        			"component_groups": [
+          		  		"standb"
+          			]
+        		}
+      		},
+        	"stop_standb": {
+        		"remove": {
+          			"component_groups": [
+            			"standb"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standc": {
+        		"add": {
+        			"component_groups": [
+          		  		"standc"
+          			]
+        		}
+      		},
+        	"stop_standc": {
+        		"remove": {
+          			"component_groups": [
+            			"standc"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standd": {
+        		"add": {
+        			"component_groups": [
+          		  		"standd"
+          			]
+        		}
+      		},
+        	"stop_standd": {
+        		"remove": {
+          			"component_groups": [
+            			"standd"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"stande": {
+        		"add": {
+        			"component_groups": [
+          		  		"stande"
+          			]
+        		}
+      		},
+        	"stop_stande": {
+        		"remove": {
+          			"component_groups": [
+            			"stande"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standf": {
+        		"add": {
+        			"component_groups": [
+          		  		"standf"
+          			]
+        		}
+      		},
+        	"stop_standf": {
+        		"remove": {
+          			"component_groups": [
+            			"standf"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standg": {
+        		"add": {
+        			"component_groups": [
+          		  		"standg"
+          			]
+        		}
+      		},
+        	"stop_standg": {
+        		"remove": {
+          			"component_groups": [
+            			"standg"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standh": {
+        		"add": {
+      			    "component_groups": [
+       				     "standh"
+          			]
+        		}
+      		},
+        	"stop_standh": {
+        		"remove": {
+					"component_groups": [
+						"standh"
+					]
+        		},
+      			"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standi": {
+        		"add": {
+        			"component_groups": [
+          		  		"standi"
+          			]
+        		}
+      		},
+        	"stop_standi": {
+        		"remove": {
+          			"component_groups": [
+            			"standi"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standj": {
+        		"add": {
+        			"component_groups": [
+          		  		"standj"
+          			]
+        		}
+      		},
+        	"stop_standj": {
+        		"remove": {
+          			"component_groups": [
+            			"standj"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standk": {
+        		"add": {
+        			"component_groups": [
+          		  		"standk"
+          			]
+        		}
+      		},
+        	"stop_standk": {
+        		"remove": {
+          			"component_groups": [
+            			"standk"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standl": {
+        		"add": {
+        			"component_groups": [
+          		  		"standl"
+          			]
+        		}
+      		},
+        	"stop_standl": {
+        		"remove": {
+          			"component_groups": [
+            			"standl"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standm": {
+        		"add": {
+        			"component_groups": [
+          		  		"standm"
+          			]
+        		}
+      		},
+        	"stop_standm": {
+        		"remove": {
+          			"component_groups": [
+            			"stand"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standn": {
+        		"add": {
+        			"component_groups": [
+          		  		"standn"
+          			]
+        		}
+      		},
+        	"stop_standn": {
+        		"remove": {
+          			"component_groups": [
+            			"standn"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"stando": {
+        		"add": {
+        			"component_groups": [
+          		  		"stando"
+          			]
+        		}
+      		},
+        	"stop_stando": {
+        		"remove": {
+          			"component_groups": [
+            			"stando"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standp": {
+        		"add": {
+        			"component_groups": [
+          		  		"standp"
+          			]
+        		}
+      		},
+        	"stop_standp": {
+        		"remove": {
+          			"component_groups": [
+            			"standp"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standq": {
+        		"add": {
+        			"component_groups": [
+          		  		"standq"
+          			]
+        		}
+      		},
+        	"stop_standq": {
+        		"remove": {
+          			"component_groups": [
+            			"standq"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standr": {
+        		"add": {
+        			"component_groups": [
+          		  		"standr"
+          			]
+        		}
+      		},
+        	"stop_standr": {
+        		"remove": {
+          			"component_groups": [
+            			"standr"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"stands": {
+        		"add": {
+        			"component_groups": [
+          		  		"stands"
+          			]
+        		}
+      		},
+        	"stop_stands": {
+        		"remove": {
+          			"component_groups": [
+            			"stands"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standt": {
+        		"add": {
+        			"component_groups": [
+          		  		"standt"
+          			]
+        		}
+      		},
+        	"stop_standt": {
+        		"remove": {
+          			"component_groups": [
+            			"standt"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"standu": {
+        		"add": {
+        			"component_groups": [
+          		  		"standu"
+          			]
+        		}
+      		},
+        	"stop_standu": {
+        		"remove": {
+          			"component_groups": [
+            			"standu"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"teleport": {
+        		"add": {
+        			"component_groups": [
+          		  		"teleport"
+          			]
+        		}
+      		},
+        	"stop_teleport": {
+        		"remove": {
+          			"component_groups": [
+            			"teleport"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"excalibur": {
+        		"add": {
+        			"component_groups": [
+          		  		"excalibur"
+          			]
+        		}
+      		},
+        	"stop_excalibur": {
+        		"remove": {
+          			"component_groups": [
+            			"excalibur"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"rockalibur": {
+        		"add": {
+        			"component_groups": [
+          		  		"rockalibur"
+          			]
+        		}
+      		},
+        	"stop_rockalibur": {
+        		"remove": {
+          			"component_groups": [
+            			"rockalibur"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"ls_on": {
+        		"add": {
+        			"component_groups": [
+          		  		"ls_on"
+          			]
+        		}
+      		},
+        	"stop_ls_on": {
+        		"remove": {
+          			"component_groups": [
+            			"ls_on"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"ls_off": {
+        		"add": {
+        			"component_groups": [
+          		  		"ls_off"
+          			]
+        		}
+      		},
+        	"stop_ls_off": {
+        		"remove": {
+          			"component_groups": [
+            			"ls_off"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"java_sword": {
+        		"add": {
+        			"component_groups": [
+          		  		"java_sword"
+          			]
+        		}
+      		},
+        	"stop_java_sword": {
+        		"remove": {
+          			"component_groups": [
+            			"java_sword"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"red_brick": {
+        		"add": {
+        			"component_groups": [
+          		  		"red_brick"
+          			]
+        		}
+      		},
+        	"stop_red_brick": {
+        		"remove": {
+          			"component_groups": [
+            			"red_brick"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"jetpack": {
+        		"add": {
+        			"component_groups": [
+          		  		"jetpack"
+          			]
+        		}
+      		},
+        	"stop_jetpack": {
+        		"remove": {
+          			"component_groups": [
+            			"jetpack"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"zzst": {
+        		"add": {
+        			"component_groups": [
+          		  		"zzst"
+          			]
+        		}
+      		},
+        	"stop_zzst": {
+        		"remove": {
+          			"component_groups": [
+            			"zzst"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+			"hyan": {
+        		"add": {
+        			"component_groups": [
+          		  		"hyan"
+          			]
+        		}
+      		},
+        	"stop_hyan": {
+        		"remove": {
+          			"component_groups": [
+            			"hyan"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"base"
+          			]
+        		}
+      		},
+      		"minecraft:gain_bad_omen": {
+        		"add": {
+          			"component_groups": [
+            			"minecraft:add_bad_omen"
+          			]
+        		}
+      		},
+      		"minecraft:clear_add_bad_omen": {
+        		"remove": {
+          			"component_groups": [
+            			"minecraft:add_bad_omen"
+          			]
+        		},
+        		"add": {
+          			"component_groups": [
+            			"minecraft:clear_bad_omen_spell_effect"
+          			]
+        		}
+      		},
+      		"minecraft:trigger_raid": {
+        		"add": {
+          			"component_groups": [ "minecraft:raid_trigger" ]
+        		}
+      		},
+      		"minecraft:remove_raid_trigger": {
+        		"remove": {
+          		"component_groups": [ "minecraft:raid_trigger" ]
+        		}
+      		}
+    	}
+  	}
+}

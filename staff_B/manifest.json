@@ -1,0 +1,19 @@
+{
+"format_version":1,
+"header":{
+"description":"by Hyan & zzst",
+"name":"Megumin`s staff",
+"uuid":"7846fb3a-5fe9-4b37-9c87-215f3a2afc64",
+"version":[1,0,0],
+"min_engine_version":[1,10,0]
+},
+"modules":[
+{
+"description":"by Hyan & zzst",
+"type":"data",
+"uuid":"15ef5374-3c52-41e4-8453-d73692555472",
+"version":[1,0,0]
+}
+],
+"metadata": { "product_type": "addon" }
+}
