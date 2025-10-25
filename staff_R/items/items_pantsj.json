@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:pantsj",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "pantsj",
+      "minecraft:render_offsets": "pantsj"
+    }
+  }
+}

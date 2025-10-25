@@ -2,12 +2,12 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "items:dna"
+      "identifier": "items:steal"
    },
     "components": {
-      "minecraft:hand_equipped":true,
+      "minecraft:hand_equipped":false,
       "minecraft:stacked_by_data": true,
-      "minecraft:foil": true,
+      "minecraft:foil": false,
       "minecraft:max_stack_size": 1,
       "minecraft:use_duration": 99999999,
       "minecraft:food": {

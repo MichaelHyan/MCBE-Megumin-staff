@@ -5,6 +5,7 @@
       "identifier": "items:staffa"
    },
     "components": {
+      "minecraft:hand_equipped":true,
       "minecraft:stacked_by_data": true,
       "minecraft:foil": false,
       "minecraft:max_stack_size": 1,

@@ -4,6 +4,42 @@
   "texture_data": {
     "staff": {
       "textures": "pack_icon.png"
+    },
+    "steal": {
+      "textures": "steal.png"
+    },
+    "ls": {
+      "textures": "ls.png"
+    },
+    "pantsa": {
+      "textures": "pantsa.png"
+    },
+    "pantsb": {
+      "textures": "pantsb.png"
+    },
+    "pantsc": {
+      "textures": "pantsc.png"
+    },
+    "pantsd": {
+      "textures": "pantsd.png"
+    },
+    "pantse": {
+      "textures": "pantse.png"
+    },
+    "pantsf": {
+      "textures": "pantsf.png"
+    },
+    "pantsg": {
+      "textures": "pantsg.png"
+    },
+    "pantsh": {
+      "textures": "pantsh.png"
+    },
+    "pantsi": {
+      "textures": "pantsi.png"
+    },
+    "pantsj": {
+      "textures": "pantsj.png"
     }
   }
 }

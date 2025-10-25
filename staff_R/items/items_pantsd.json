@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:pantsd",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "pantsd",
+      "minecraft:render_offsets": "pantsd"
+    }
+  }
+}

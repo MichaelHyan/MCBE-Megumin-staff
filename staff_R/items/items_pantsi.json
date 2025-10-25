@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "items:pantsi",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "pantsi",
+      "minecraft:render_offsets": "pantsi"
+    }
+  }
+}

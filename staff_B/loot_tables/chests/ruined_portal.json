@@ -22,7 +22,7 @@
         },
         {
           "type": "item",
-          "name": "items:dn",
+          "name": "items:steal",
           "functions": [
             {
               "function": "set_count",

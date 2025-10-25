@@ -1,0 +1,113 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.ls":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"ls_a":"query.get_equipped_item_name=='ls' && query.is_using_item && query.scoreboard('ls') > 25 && query.scoreboard('ls') <= 30"},
+						{"ls_b":"query.get_equipped_item_name=='ls' && query.is_using_item && query.scoreboard('ls') > 12 && query.scoreboard('ls') <= 25"},
+						{"ls_c":"query.get_equipped_item_name=='ls' && query.is_using_item && query.scoreboard('ls') > 9 && query.scoreboard('ls') <= 12"},
+						{"ls_d":"query.get_equipped_item_name=='ls' && query.is_using_item && query.scoreboard('ls') > 6 && query.scoreboard('ls') <= 9"},
+						{"ls_e":"query.get_equipped_item_name=='ls' && query.is_using_item && query.scoreboard('ls') > 3 && query.scoreboard('ls') <= 6"},
+						{"ls_f":"query.get_equipped_item_name=='ls' && query.is_using_item && query.scoreboard('ls') > 0 && query.scoreboard('ls') <= 3"},
+						{"ls_g":"query.get_equipped_item_name=='ls' && query.is_using_item && query.scoreboard('ls') == 0"},
+						{"ls_h":"query.get_equipped_item_name=='ls' && !query.is_using_item"}
+
+					]
+				},
+				"ls_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s ls -1",
+						"/function lb"
+					]
+				},
+				"ls_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s ls -1",
+						"/function la"
+					]
+				},
+				"ls_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s ls -1",
+						"/damage @e[type=!item,type=!player,r=5] 8",
+						"/function lc"
+					]
+				},
+				"ls_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s ls -1",
+						"/damage @e[type=!item,type=!player,rm=5,r=8] 7",
+						"/function ld"
+					]
+				},
+				"ls_e": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s ls -1",
+						"/damage @e[type=!item,type=!player,rm=8,r=11] 6",
+						"/function le"
+					]
+				},
+				"ls_f": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s ls -1",
+						"/damage @e[type=!item,type=!player,rm=11,r=15] 5",
+						"/function lf"
+					]
+				},
+				"ls_g": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players set @s ls 12"
+					]
+				},
+				"ls_h": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add ls dummy",
+						"/scoreboard players set @s ls 30"
+					]
+				}
+			}
+		}
+ 	}
+ }

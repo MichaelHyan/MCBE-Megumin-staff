@@ -2,21 +2,26 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "items:dn"
+      "identifier": "items:ls"
     },
     "tags": [
       "crafting_table"
     ],
     "pattern": [
-      "a"
+      " b ",
+      "bab",
+      " b "
     ],
     "key": {
       "a": {
-        "item": "items:dna"
+        "item": "stick"
+      },
+      "b": {
+        "item": "gunpowder"
       }
     },
     "result": {
-      "item": "items:dn",
+      "item": "items:ls",
       "count": 1
     }
   }

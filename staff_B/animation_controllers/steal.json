@@ -1,0 +1,166 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.steal":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"steal_a":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 0"},
+						{"steal_b":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 1"},
+						{"steal_c":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 2"},
+						{"steal_d":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 3"},
+						{"steal_e":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 4"},
+						{"steal_f":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 5"},
+						{"steal_g":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 6"},
+						{"steal_h":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 7"},
+						{"steal_i":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 8"},
+						{"steal_j":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 9"},
+						{"steal_k":"query.get_equipped_item_name=='steal' && !query.is_using_item && query.scoreboard('steal') < 9"},
+						{"steal_l":"query.get_equipped_item_name=='steal' && !query.is_using_item && query.scoreboard('steal') == 9"}
+					]
+				},
+				"steal_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantsa",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantsb",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantsc",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantsd",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_e": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantse",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_f": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantsf",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_g": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantsg",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_h": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantsh",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_i": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantsi",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_j": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:pantsj",
+						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
+						"/scoreboard players set @s steal 1"
+					]
+				},
+				"steal_k": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add steal dummy",
+						"/scoreboard players add @s steal 1"
+					]
+				},
+				"steal_l": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players set @s steal 1"
+					]
+				}
+			}
+		}
+ 	}
+ }

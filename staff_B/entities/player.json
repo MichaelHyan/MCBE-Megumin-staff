@@ -9,12 +9,14 @@
 			"scripts": {
 				"animate": [
 					"staff",
-					"dn"
+					"steal",
+					"ls"
 				]
 			},
 			"animations": {
 				"staff": "controller.animation.staff",
-				"dn": "controller.animation.dn"
+				"steal": "controller.animation.steal",
+				"ls": "controller.animation.ls"
 			} 
 		},
 		"component_groups": {
