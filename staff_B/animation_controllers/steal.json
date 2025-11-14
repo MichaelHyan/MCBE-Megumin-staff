@@ -5,18 +5,20 @@
 			"states":{
 				"base_jeta":{
 					"transitions":[
-						{"steal_a":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 0"},
-						{"steal_b":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 1"},
-						{"steal_c":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 2"},
-						{"steal_d":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 3"},
-						{"steal_e":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 4"},
-						{"steal_f":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 5"},
-						{"steal_g":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 6"},
-						{"steal_h":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 7"},
-						{"steal_i":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 8"},
-						{"steal_j":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('steal') == 9"},
-						{"steal_k":"query.get_equipped_item_name=='steal' && !query.is_using_item && query.scoreboard('steal') < 9"},
-						{"steal_l":"query.get_equipped_item_name=='steal' && !query.is_using_item && query.scoreboard('steal') == 9"}
+						{"steal_a":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 0"},
+						{"steal_b":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 1"},
+						{"steal_c":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 2"},
+						{"steal_d":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 3"},
+						{"steal_e":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 4"},
+						{"steal_f":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 5"},
+						{"steal_g":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 6"},
+						{"steal_h":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 7"},
+						{"steal_i":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 8"},
+						{"steal_j":"query.get_equipped_item_name=='steal' && query.scoreboard('cd') == 10 && query.scoreboard('steal') == 9"},
+						{"steal_k":"query.get_equipped_item_name=='steal' && !query.is_using_item && query.scoreboard('cd') == 0 && query.scoreboard('steal') < 9"},
+						{"steal_l":"query.get_equipped_item_name=='steal' && !query.is_using_item && query.scoreboard('cd') == 0 && query.scoreboard('steal') == 9"},
+						{"steal_m":"query.get_equipped_item_name=='steal' && query.is_using_item && query.scoreboard('cd') == 0"},
+						{"steal_n":"query.scoreboard('cd') > 0 && query.scoreboard('cd') < 10"}
 					]
 				},
 				"steal_a": {
@@ -28,7 +30,8 @@
 					"on_entry": [
 						"/give @s items:pantsa",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players add @s steal 1"
+						"/scoreboard players add @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_b": {
@@ -40,7 +43,8 @@
 					"on_entry": [
 						"/give @s items:pantsb",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players add @s steal 1"
+						"/scoreboard players add @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_c": {
@@ -52,7 +56,8 @@
 					"on_entry": [
 						"/give @s items:pantsc",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players add @s steal 1"
+						"/scoreboard players add @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_d": {
@@ -64,7 +69,8 @@
 					"on_entry": [
 						"/give @s items:pantsd",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players add @s steal 1"
+						"/scoreboard players add @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_e": {
@@ -76,7 +82,8 @@
 					"on_entry": [
 						"/give @s items:pantse",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players add @s steal 1"
+						"/scoreboard players add @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_f": {
@@ -88,7 +95,8 @@
 					"on_entry": [
 						"/give @s items:pantsf",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players add @s steal 1"
+						"/scoreboard players add @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_g": {
@@ -100,7 +108,8 @@
 					"on_entry": [
 						"/give @s items:pantsg",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players add @s steal 1"
+						"/scoreboard players add @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_h": {
@@ -112,7 +121,8 @@
 					"on_entry": [
 						"/give @s items:pantsh",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players add @s steal 1"
+						"/scoreboard players add @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_i": {
@@ -124,7 +134,8 @@
 					"on_entry": [
 						"/give @s items:pantsi",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players add @s steal 1"
+						"/scoreboard players add @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_j": {
@@ -136,7 +147,8 @@
 					"on_entry": [
 						"/give @s items:pantsj",
 						"/damage @n[r=10,rm=2,type=!item,type=!arrow,type=!armor_stand] 1",
-						"/scoreboard players set @s steal 1"
+						"/scoreboard players set @s steal 1",
+						"/scoreboard players set @s cd 0"
 					]
 				},
 				"steal_k": {
@@ -147,6 +159,7 @@
 					],
 					"on_entry": [
 						"/scoreboard objectives add steal dummy",
+						"/scoreboard objectives add cd dummy",
 						"/scoreboard players add @s steal 1"
 					]
 				},
@@ -158,6 +171,27 @@
 					],
 					"on_entry": [
 						"/scoreboard players set @s steal 1"
+					]
+				},
+				"steal_m": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players set @s cd 1",
+						"/camera @s fade"
+					]
+				},
+				"steal_n": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s cd 1"
 					]
 				}
 			}
