@@ -1,0 +1,18 @@
+{
+  "spella": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/spella",
+      "stream": true
+    }]
+  },
+  "spellb": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/spellb",
+      "stream": true
+    }]
+  }
+}

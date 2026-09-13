@@ -1,0 +1,257 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "entity:megumin",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+				"animate": [
+					"megumin"
+				]
+			},
+      "animations": {
+				"megumin": "controller.animation.megumin"
+			}
+    },
+    "component_groups": {
+      "spell": {
+        "minecraft:transformation": {
+          "into": "entity:megumin_spell"
+        }
+      },
+      "upset": {
+        "minecraft:transformation": {
+          "into": "entity:megumin_upset"
+        }
+      },
+      "tame": {
+        "minecraft:sittable": {},
+        "minecraft:behavior.stay_while_sitting": {
+          "priority": 0
+        },
+        "minecraft:health": {
+          "value": 20,
+          "max": 20,
+          "min": 0
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 5,
+          "speed_multiplier": 1.2,
+          "start_distance": 15,
+          "stop_distance": 3
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        }
+      },
+      "mode_one": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:angry": {
+          "duration": -1,
+          "broadcastAnger": false,
+          "calm_event": {
+            "event": "stop_anger",
+            "target": "self"
+          }
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "randomInterval": false,
+          "time": 300.0,
+          "time_down_event": {
+            "event": "stop_anger",
+            "target": "self"
+          }
+        }
+      },
+      "mode_zero": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      }
+    },
+    "components": {
+      "minecraft:nameable": {},
+      "minecraft:tameable": {
+        "probability": 1,
+        "tameItems": "items:eris",
+        "tame_event": {
+          "event": "tamed",
+          "target": "self"
+        }
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:interact": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "items:mana_crystal"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "spell"
+            },
+            "use_item": false,
+            "interact_text": "addon.get.items"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "items:steal"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "upset"
+            },
+            "use_item": false,
+            "interact_text": "addon.get.items"
+          }
+        ],
+      "minecraft:on_target_acquired": {
+        "event": "anger",
+        "target": "self"
+      },
+      "minecraft:on_target_escape": {
+        "event": "stop_anger",
+        "target": "self"
+      },
+      "minecraft:leashable": {},
+      "minecraft:leashable_to": {},
+      "minecraft:follow_range": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20,
+        "min": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.6
+      },
+      "minecraft:behavior.sleep": {
+        "priority": 3,
+        "goal_radius": 5,
+        "speed_multiplier": 1.2,
+        "sleep_collider_height": 0.3,
+        "sleep_collider_width": 1.0,
+        "sleep_y_offset": 0.6
+      },
+      "minecraft:equipment": {
+        "table": "partner/staff.json"
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "mob",
+          "konosuba"
+        ]
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:fire_immune": true,
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 5,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 6
+      },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {},
+      "tamed": {
+        "add": {
+          "component_groups": [
+            "tame"
+          ]
+        }
+      },
+      "spell": {
+        "add": {
+          "component_groups": [
+            "spell"
+          ]
+        }
+      },
+      "upset": {
+        "add": {
+          "component_groups": [
+            "upset"
+          ]
+        }
+      },
+      "anger": {
+        "add": {
+          "component_groups": [
+            "mode_one"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "mode_zero"
+          ]
+        }
+      },
+      "stop_anger": {
+        "add": {
+          "component_groups": [
+            "mode_zero"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "mode_one"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.exocism":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"exocism":"1==1"}
+					]
+				},
+				"exocism": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @s @n[type=entity:aqua]",
+						"/effect @s resistance 1 255 true",
+						"/effect @e[r=5,family=!monster] instant_health 1 1 true",
+						"/damage @e[r=5,family=monster] 1",
+						"/damage @e[r=5,family=undead] 3"
+					]
+				}
+			}
+		}
+ 	}
+ }

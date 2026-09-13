@@ -1,0 +1,101 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "entity:megumin_falldown",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "spell": {
+        "minecraft:transformation": {
+          "into": "entity:megumin"
+        }
+      }
+    },
+    "components": {
+      "minecraft:spell_effects": {
+        "add_effects": [
+          {
+            "effect": "resistance",
+            "amplifier": 3,
+            "visible": false,
+            "ambient": true,
+            "duration": 99999999
+          }
+        ]
+      },
+      "minecraft:interact": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "items:mana_crystal"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "spell"
+            },
+            "use_item": true,
+            "interact_text": "addon.get.items"
+          }
+        ],
+      "minecraft:nameable": {},
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:on_target_acquired": {
+        "event": "anger",
+        "target": "self"
+      },
+      "minecraft:on_target_escape": {
+        "event": "stop_anger",
+        "target": "self"
+      },
+      "minecraft:leashable": {},
+      "minecraft:leashable_to": {},
+      "minecraft:health": {
+        "value": 20,
+        "max": 20,
+        "min": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.6
+      },
+      "minecraft:equipment": {
+        "table": "partner/staff.json"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "mob",
+          "konosuba"
+        ]
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:physics": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {},
+      "spell": {
+        "add": {
+          "component_groups": [
+            "spell"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.explosion_base":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"summon_a":"math.mod(query.life_time,0.5) == 0 && query.life_time <= 7 && math.random_integer(0,2) == 0"},
+						{"summon_b":"math.mod(query.life_time,0.5) == 0 && query.life_time <= 7 && math.random_integer(0,2) == 1"},
+						{"summon_c":"math.mod(query.life_time,0.5) == 0 && query.life_time <= 7 && math.random_integer(0,2) == 2"},
+						{"summon_d":"query.life_time == 10"}
+					]
+				},
+				"summon_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon entity:explosion_b",
+						"/tp @n[type=entity:explosion_b] @n[type=entity:explosion_summon]"
+					]
+				},
+				"summon_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon entity:explosion_c",
+						"/tp @n[type=entity:explosion_c] @n[type=entity:explosion_summon]"
+					]
+				},
+				"summon_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon entity:explosion_d",
+						"/tp @n[type=entity:explosion_d] @n[type=entity:explosion_summon]"
+					]
+				}
+			}
+		}
+ 	}
+ }

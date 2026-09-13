@@ -1,0 +1,70 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "entity:megumin_spell",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+				"animate": [
+					"spell",
+          "spark"
+				]
+			},
+      "animations": {
+				"spell": "controller.animation.spell",
+        "spark": "controller.animation.spark"
+			}
+    },
+    "components": {
+      "minecraft:spell_effects": {
+        "add_effects": [
+          {
+            "effect": "resistance",
+            "amplifier": 3,
+            "visible": false,
+            "ambient": true,
+            "duration": 99999999
+          }
+        ]
+      },
+      "minecraft:nameable": {},
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:on_target_acquired": {
+        "event": "anger",
+        "target": "self"
+      },
+      "minecraft:on_target_escape": {
+        "event": "stop_anger",
+        "target": "self"
+      },
+      "minecraft:leashable": {},
+      "minecraft:leashable_to": {},
+      "minecraft:health": {
+        "value": 20,
+        "max": 20,
+        "min": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.6
+      },
+      "minecraft:equipment": {
+        "table": "partner/staff.json"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "mob",
+          "konosuba"
+        ]
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:physics": {}
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.explosion_summon":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"summon_set":"query.life_time == 1"},
+						{"summon_a":"math.mod(query.life_time,0.5) == 0 && query.life_time > 1 && query.life_time <= 8 && math.random_integer(0,1) == 0"},
+						{"summon_b":"math.mod(query.life_time,0.5) == 0 && query.life_time > 1 && query.life_time <= 8 && math.random_integer(0,1) == 1"},
+						{"summon_c":"query.life_time == 34"}
+					]
+				},
+				"summon_set": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @n[type=entity:target]",
+						"/summon entity:explosion_base"
+					]
+				},
+				"summon_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @s ~ ~5 ~"
+					]
+				},
+				"summon_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @s ~ ~10 ~"
+					]
+				},
+				"summon_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon entity:explosion_fall"
+					]
+				}
+			}
+		}
+ 	}
+ }

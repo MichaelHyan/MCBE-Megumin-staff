@@ -1,0 +1,48 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "staff": {
+      "textures": "textures/items/staff.png"
+    },
+    "steal": {
+      "textures": "textures/items/steal.png"
+    },
+    "pantsa": {
+      "textures": "textures/items/pantsa.png"
+    },
+    "pantsb": {
+      "textures": "textures/items/pantsb.png"
+    },
+    "pantsc": {
+      "textures": "textures/items/pantsc.png"
+    },
+    "pantsd": {
+      "textures": "textures/items/pantsd.png"
+    },
+    "pantse": {
+      "textures": "textures/items/pantse.png"
+    },
+    "pantsf": {
+      "textures": "textures/items/pantsf.png"
+    },
+    "pantsg": {
+      "textures": "textures/items/pantsg.png"
+    },
+    "pantsh": {
+      "textures": "textures/items/pantsh.png"
+    },
+    "pantsi": {
+      "textures": "textures/items/pantsi.png"
+    },
+    "pantsj": {
+      "textures": "textures/items/pantsj.png"
+    },
+    "target": {
+      "textures": "textures/items/target.png"
+    },
+    "mana_crystal": {
+      "textures": "textures/items/mana_crystal.png"
+    }
+  }
+}

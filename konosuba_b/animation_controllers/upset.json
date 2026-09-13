@@ -1,0 +1,123 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.upset":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"give_a":"query.life_time == 1 && math.random_integer(0,9) == 0"},
+						{"give_b":"query.life_time == 1 && math.random_integer(0,9) == 1"},
+						{"give_c":"query.life_time == 1 && math.random_integer(0,9) == 2"},
+						{"give_d":"query.life_time == 1 && math.random_integer(0,9) == 3"},
+						{"give_e":"query.life_time == 1 && math.random_integer(0,9) == 4"},
+						{"give_f":"query.life_time == 1 && math.random_integer(0,9) == 5"},
+						{"give_g":"query.life_time == 1 && math.random_integer(0,9) == 6"},
+						{"give_h":"query.life_time == 1 && math.random_integer(0,9) == 7"},
+						{"give_i":"query.life_time == 1 && math.random_integer(0,9) == 8"},
+						{"give_j":"query.life_time == 1 && math.random_integer(0,9) == 9"}
+					]
+				},
+				"give_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantsa"
+					]
+				},
+				"give_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantsb"
+					]
+				},
+				"give_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantsc"
+					]
+				},
+				"give_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantsd"
+					]
+				},
+				"give_e": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantse"
+					]
+				},
+				"give_f": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantsf"
+					]
+				},
+				"give_g": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantsg"
+					]
+				},
+				"give_h": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantsh"
+					]
+				},
+				"give_i": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantsi"
+					]
+				},
+				"give_j": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @p[r=5] items:pantsj"
+					]
+				}
+			}
+		}
+ 	}
+ }

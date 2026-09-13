@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.skill":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"staff":"query.get_equipped_item_name=='staff' && query.is_using_item && query.scoreboard('mana') >= 0"},
+						{"staff_a":"query.get_equipped_item_name=='staff_a' && query.is_using_item && query.scoreboard('mana') >= 0"}
+					]
+				},
+				"staff": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add mana dummy",
+						"/summon entity:explosion_summon",
+						"/music play spellb 1",
+						"/scoreboard players add @s mana -100"
+					]
+				},
+				"staff_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard objectives add mana dummy",
+						"/summon entity:exocism_a",
+						"/scoreboard players add @s mana -100"
+					]
+				}
+			}
+		}
+ 	}
+ }

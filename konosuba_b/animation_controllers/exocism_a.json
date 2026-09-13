@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.exocism_a":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"excocism":"query.life_time <= 10"},
+						{"off":"query.life_time > 10"}
+					]
+				},
+				"excocism": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @s @p",
+						"/effect @s resistance 1 255 true",
+						"/effect @e[r=5,family=!monster] instant_health 1 1 true",
+						"/damage @e[r=5,family=monster] 1",
+						"/damage @e[r=5,family=undead] 3"
+					]
+				},
+				"off": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp ~~-3~",
+						"/kill @s"
+					]
+				}
+			}
+		}
+ 	}
+ }

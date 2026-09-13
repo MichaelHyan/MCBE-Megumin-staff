@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.skill_recharge":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"recharge":"query.scoreboard('mana') < 0"}
+					]
+				},
+				"recharge": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:end_chest ~ ~0.5 ~",
+						"/scoreboard players add @s mana 1"
+					]
+				}
+			}
+		}
+ 	}
+ }

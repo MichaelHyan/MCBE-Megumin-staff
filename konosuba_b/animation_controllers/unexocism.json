@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.unexocism":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"exocism":"query.life_time == 1"}
+					]
+				},
+				"exocism": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @e[type=entity:exocism] ~~-3~",
+						"/kill @e[type=entity:exocism]"
+					]
+				}
+			}
+		}
+ 	}
+ }

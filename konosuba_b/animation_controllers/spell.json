@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.spell":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"staff":"query.life_time == 1"},
+						{"falldown":"query.life_time == 39"}
+					]
+				},
+				"staff": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/tp @s ~ ~ ~ facing @n[type=entity:target]",
+						"/summon entity:explosion_summon",
+						"/summon entity:explosion_a",
+						"/music play spella 1"
+					]
+				},
+				"falldown": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon entity:megumin_falldown",
+						"/kill @s"
+					]
+				}
+			}
+		}
+ 	}
+ }

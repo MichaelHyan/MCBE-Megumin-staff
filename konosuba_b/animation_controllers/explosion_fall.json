@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.explosion_fall":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"explosion_fall_a":"query.life_time > 1 && query.vertical_speed > -1"},
+						{"explosion_fall_b":"query.life_time > 1 && query.vertical_speed < -1"}
+					]
+				},
+				"explosion_fall_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/kill @s",
+						"/kill @e[family=explosion]",
+						"/summon entity:explosion",
+						"/camera @a[r=500] fade time 0 3 1 color 255 255 255"
+					]
+				},
+				"explosion_fall_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:dragon_death_explosion_emitter ~ ~ ~"
+					]
+				}
+			}
+		}
+ 	}
+ }
