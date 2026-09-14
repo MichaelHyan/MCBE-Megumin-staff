@@ -8,11 +8,13 @@
       "is_experimental": false,
       "scripts": {
 				"animate": [
-					"explosion"
+					"explosion",
+          "spark_a"
 				]
 			},
       "animations": {
-				"explosion": "controller.animation.explosion"
+				"explosion": "controller.animation.explosion",
+        "spark_a": "controller.animation.spark_a"
 			}
     },
     "components": {

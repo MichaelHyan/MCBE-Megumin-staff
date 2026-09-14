@@ -1,0 +1,253 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.spark_a": {
+			"states": {
+				"base_jeta": {
+					"transitions": [
+						{"spark_a0": "math.random_integer(0,47) == 0"},
+						{"spark_a1": "math.random_integer(0,47) == 1"},
+						{"spark_a2": "math.random_integer(0,47) == 2"},
+						{"spark_a3": "math.random_integer(0,47) == 3"},
+						{"spark_a4": "math.random_integer(0,47) == 4"},
+						{"spark_a5": "math.random_integer(0,47) == 5"},
+						{"spark_a6": "math.random_integer(0,47) == 6"},
+						{"spark_a7": "math.random_integer(0,47) == 7"},
+						{"spark_b0": "math.random_integer(0,47) == 8"},
+						{"spark_b1": "math.random_integer(0,47) == 9"},
+						{"spark_b2": "math.random_integer(0,47) == 10"},
+						{"spark_b3": "math.random_integer(0,47) == 11"},
+						{"spark_b4": "math.random_integer(0,47) == 12"},
+						{"spark_b5": "math.random_integer(0,47) == 13"},
+						{"spark_b6": "math.random_integer(0,47) == 14"},
+						{"spark_b7": "math.random_integer(0,47) == 15"},
+						{"spark_c0": "math.random_integer(0,47) == 16"},
+						{"spark_c1": "math.random_integer(0,47) == 17"},
+						{"spark_c2": "math.random_integer(0,47) == 18"},
+						{"spark_c3": "math.random_integer(0,47) == 19"},
+						{"spark_c4": "math.random_integer(0,47) == 20"},
+						{"spark_c5": "math.random_integer(0,47) == 21"},
+						{"spark_c6": "math.random_integer(0,47) == 22"},
+						{"spark_c7": "math.random_integer(0,47) == 23"},
+						{"spark_d0": "math.random_integer(0,47) == 24"},
+						{"spark_d1": "math.random_integer(0,47) == 25"},
+						{"spark_d2": "math.random_integer(0,47) == 26"},
+						{"spark_d3": "math.random_integer(0,47) == 27"},
+						{"spark_d4": "math.random_integer(0,47) == 28"},
+						{"spark_d5": "math.random_integer(0,47) == 29"},
+						{"spark_d6": "math.random_integer(0,47) == 30"},
+						{"spark_d7": "math.random_integer(0,47) == 31"},
+						{"spark_e0": "math.random_integer(0,47) == 32"},
+						{"spark_e1": "math.random_integer(0,47) == 33"},
+						{"spark_e2": "math.random_integer(0,47) == 34"},
+						{"spark_e3": "math.random_integer(0,47) == 35"},
+						{"spark_e4": "math.random_integer(0,47) == 36"},
+						{"spark_e5": "math.random_integer(0,47) == 37"},
+						{"spark_e6": "math.random_integer(0,47) == 38"},
+						{"spark_e7": "math.random_integer(0,47) == 39"},
+						{"spark_f0": "math.random_integer(0,47) == 40"},
+						{"spark_f1": "math.random_integer(0,47) == 41"},
+						{"spark_f2": "math.random_integer(0,47) == 42"},
+						{"spark_f3": "math.random_integer(0,47) == 43"},
+						{"spark_f4": "math.random_integer(0,47) == 44"},
+						{"spark_f5": "math.random_integer(0,47) == 45"},
+						{"spark_f6": "math.random_integer(0,47) == 46"},
+						{"spark_f7": "math.random_integer(0,47) == 47"}
+					]
+				},
+				"spark_a0": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~2 ~1 ~0"]
+				},
+				"spark_a1": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-2 ~1 ~0"]
+				},
+				"spark_a2": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~1 ~2"]
+				},
+				"spark_a3": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~1 ~-2"]
+				},
+				"spark_a4": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~1 ~1.4"]
+				},
+				"spark_a5": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~1 ~1.4"]
+				},
+				"spark_a6": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~1 ~-1.4"]
+				},
+				"spark_a7": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~1 ~-1.4"]
+				},
+				"spark_b0": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~2 ~4 ~0"]
+				},
+				"spark_b1": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-2 ~4 ~0"]
+				},
+				"spark_b2": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~4 ~2"]
+				},
+				"spark_b3": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~4 ~-2"]
+				},
+				"spark_b4": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~4 ~1.4"]
+				},
+				"spark_b5": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~4 ~1.4"]
+				},
+				"spark_b6": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~4 ~-1.4"]
+				},
+				"spark_b7": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~4 ~-1.4"]
+				},
+				"spark_c0": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~2 ~7 ~0"]
+				},
+				"spark_c1": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-2 ~7 ~0"]
+				},
+				"spark_c2": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~7 ~2"]
+				},
+				"spark_c3": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~7 ~-2"]
+				},
+				"spark_c4": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~7 ~1.4"]
+				},
+				"spark_c5": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~7 ~1.4"]
+				},
+				"spark_c6": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~7 ~-1.4"]
+				},
+				"spark_c7": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~7 ~-1.4"]
+				},
+				"spark_d0": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~2 ~-1 ~0"]
+				},
+				"spark_d1": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-2 ~-1 ~0"]
+				},
+				"spark_d2": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~-1 ~2"]
+				},
+				"spark_d3": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~-1 ~-2"]
+				},
+				"spark_d4": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~-1 ~1.4"]
+				},
+				"spark_d5": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~-1 ~1.4"]
+				},
+				"spark_d6": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~-1 ~-1.4"]
+				},
+				"spark_d7": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~-1 ~-1.4"]
+				},
+				"spark_e0": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~2 ~-4 ~0"]
+				},
+				"spark_e1": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-2 ~-4 ~0"]
+				},
+				"spark_e2": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~-4 ~2"]
+				},
+				"spark_e3": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~-4 ~-2"]
+				},
+				"spark_e4": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~-4 ~1.4"]
+				},
+				"spark_e5": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~-4 ~1.4"]
+				},
+				"spark_e6": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~-4 ~-1.4"]
+				},
+				"spark_e7": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~-4 ~-1.4"]
+				},
+				"spark_f0": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~2 ~-7 ~0"]
+				},
+				"spark_f1": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-2 ~-7 ~0"]
+				},
+				"spark_f2": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~-7 ~2"]
+				},
+				"spark_f3": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~0 ~-7 ~-2"]
+				},
+				"spark_f4": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~-7 ~1.4"]
+				},
+				"spark_f5": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~-7 ~1.4"]
+				},
+				"spark_f6": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~1.4 ~-7 ~-1.4"]
+				},
+				"spark_f7": {
+					"transitions": [{"base_jeta": "(1.0)"}],
+					"on_entry": ["/particle minecraft:basic_flame_particle ~-1.4 ~-7 ~-1.4"]
+				}
+			}
+		}
+	}
+}
