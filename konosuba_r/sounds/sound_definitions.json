@@ -3,7 +3,7 @@
     "category": "neutral",
     "max_distance": 999999.0,
     "sounds": [{
-      "name": "sounds/spella",
+      "name": "sounds/konosuba/spella",
       "stream": true
     }]
   },
@@ -11,7 +11,111 @@
     "category": "neutral",
     "max_distance": 999999.0,
     "sounds": [{
-      "name": "sounds/spellb",
+      "name": "sounds/konosuba/spellb",
+      "stream": true
+    }]
+  },
+  "aqua_greet_a": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/aqua_greet_a",
+      "stream": true
+    }]
+  },
+  "aqua_upset_a": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/aqua_upset_a",
+      "stream": true
+    }]
+  },
+  "darkness_greet_a": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/darkness_greet_a",
+      "stream": true
+    }]
+  },
+  "darkness_greet_b": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/darkness_greet_b",
+      "stream": true
+    }]
+  },
+  "darkness_greet_c": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/darkness_greet_c",
+      "stream": true
+    }]
+  },
+  "darkness_upset_a": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/darkness_upset_a",
+      "stream": true
+    }]
+  },
+  "kazuma_greet_a": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/kazuma_greet_a",
+      "stream": true
+    }]
+  },
+  "kazuma_greet_b": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/kazuma_greet_b",
+      "stream": true
+    }]
+  },
+  "kazuma_greet_c": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/kazuma_greet_c",
+      "stream": true
+    }]
+  },
+  "megumin_greet_a": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/megumin_greet_a",
+      "stream": true
+    }]
+  },
+  "megumin_greet_b": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/megumin_greet_b",
+      "stream": true
+    }]
+  },
+  "megumin_upset_a": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/megumin_upset_a",
+      "stream": true
+    }]
+  },
+  "megumin_upset_b": {
+    "category": "neutral",
+    "max_distance": 999999.0,
+    "sounds": [{
+      "name": "sounds/konosuba/megumin_upset_b",
       "stream": true
     }]
   }

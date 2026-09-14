@@ -1,0 +1,46 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.kazuma":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"greet_a":"query.life_time == 1 && math.random_integer(0,2) == 0"},
+						{"greet_b":"query.life_time == 1 && math.random_integer(0,2) == 1"},
+						{"greet_c":"query.life_time == 1 && math.random_integer(0,2) == 2"}
+					]
+				},
+				"greet_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/playsound kazuma_greet_a @a[r=10] ~ ~ ~ 1 1 1"
+					]
+				},
+				"greet_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/playsound kazuma_greet_b @a[r=10] ~ ~ ~ 1 1 1"
+					]
+				},
+				"greet_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/playsound kazuma_greet_c @a[r=10] ~ ~ ~ 1 1 1"
+					]
+				}
+			}
+		}
+ 	}
+ }

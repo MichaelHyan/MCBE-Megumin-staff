@@ -8,11 +8,11 @@
       "is_experimental": false,
       "scripts": {
 				"animate": [
-					"megumin"
+					"kazuma"
 				]
 			},
       "animations": {
-				"megumin": "controller.animation.megumin"
+				"kazuma": "controller.animation.kazuma"
 			}
     },
     "component_groups": {

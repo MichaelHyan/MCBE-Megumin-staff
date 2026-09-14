@@ -13,6 +13,7 @@
 				]
 			},
       "animations": {
+        "darkness_upset": "controller.animation.darkness_upset",
 				"upset": "controller.animation.upset"
 			}
     },

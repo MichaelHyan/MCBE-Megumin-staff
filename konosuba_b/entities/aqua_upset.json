@@ -13,6 +13,7 @@
 				]
 			},
       "animations": {
+        "aqua_upset": "controller.animation.aqua_upset",
 				"unexocism": "controller.animation.unexocism"
 			}
     },

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.darkness_upset":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"upset_a":"query.life_time == 1 && math.random_integer(0,0) == 0"}
+					]
+				},
+				"upset_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/playsound darkness_upset_a @a[r=10] ~ ~ ~ 1 1 1"
+					]
+				}
+			}
+		}
+ 	}
+ }

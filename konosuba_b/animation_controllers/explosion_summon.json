@@ -19,6 +19,7 @@
 					],
 					"on_entry": [
 						"/tp @n[type=entity:target]",
+						"/kill @e[type=entity:target]",
 						"/summon entity:explosion_base"
 					]
 				},

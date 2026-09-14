@@ -19,7 +19,7 @@
 						"/tp @s ~ ~ ~ facing @n[type=entity:target]",
 						"/summon entity:explosion_summon",
 						"/summon entity:explosion_a",
-						"/music play spella 1"
+						"/playsound spella @a[r=10] ~ ~ ~ 1 1 1"
 					]
 				},
 				"falldown": {

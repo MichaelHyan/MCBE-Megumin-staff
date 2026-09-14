@@ -13,6 +13,7 @@
 				]
 			},
       "animations": {
+        "megumin_upset": "controller.animation.megumin_upset",
 				"upset": "controller.animation.upset"
 			}
     },
