@@ -9,12 +9,14 @@
       "scripts": {
 				"animate": [
 					"spell",
-          "spark"
+          "spark",
+          "cast"
 				]
 			},
       "animations": {
 				"spell": "controller.animation.spell",
-        "spark": "controller.animation.spark"
+        "spark": "controller.animation.spark",
+        "cast": "controller.animation.cast"
 			}
     },
     "components": {

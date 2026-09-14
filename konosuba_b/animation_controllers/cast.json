@@ -1,0 +1,244 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.cast":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"cast_a":"query.life_time == 1"},
+						{"cast_aa":"query.life_time == 2"},
+						{"cast_b":"query.life_time == 4"},
+						{"cast_ba":"query.life_time == 6"},
+						{"cast_c":"query.life_time == 8"},
+						{"cast_d":"query.life_time == 9"},
+						{"cast_da":"query.life_time == 11"},
+						{"cast_e":"query.life_time == 12"},
+						{"cast_ea":"query.life_time == 14"},
+						{"cast_f":"query.life_time == 15"},
+						{"cast_fa":"query.life_time == 17"},
+						{"cast_g":"query.life_time == 18"},
+						{"cast_ga":"query.life_time == 20"},
+						{"cast_h":"query.life_time == 21"},
+						{"cast_i":"query.life_time == 23"},
+						{"cast_j":"query.life_time == 25"},
+						{"cast_k":"query.life_time == 27"},
+						{"cast_ka":"query.life_time == 29"},
+						{"cast_l":"query.life_time == 30"},
+						{"cast_la":"query.life_time == 32"},
+						{"cast_m":"query.life_time == 34"}
+					]
+				},
+				"cast_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4黒より黒く闇より暗き漆黒に"
+					]
+				},
+				"cast_aa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4黒より黒く闇より暗き漆黒に"
+					]
+				},
+				"cast_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4我が深紅の混淆を望みたもう"
+					]
+				},
+				"cast_ba": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4我が深紅の混淆を望みたもう"
+					]
+				},
+				"cast_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4覚醒のとき来たれり"
+					]
+				},
+				"cast_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4無謬の境界に落ちし理"
+					]
+				},
+				"cast_da": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4無謬の境界に落ちし理"
+					]
+				},
+				"cast_e": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4無行の歪みとなりて現出せよ"
+					]
+				},
+				"cast_ea": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4無行の歪みとなりて現出せよ"
+					]
+				},
+				"cast_f": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4踊れ 踊れ 踊れ"
+					]
+				},
+				"cast_fa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4踊れ 踊れ 踊れ"
+					]
+				},
+				"cast_g": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4我が力の奔流に望むは崩壊なり"
+					]
+				},
+				"cast_ga": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4我が力の奔流に望むは崩壊なり"
+					]
+				},
+				"cast_h": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4並ぶ者なき崩壊なり"
+					]
+				},
+				"cast_i": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4万象等しく灰塵に帰し"
+					]
+				},
+				"cast_j": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4深淵より来たれ"
+					]
+				},
+				"cast_k": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4これが人類最大の威力の攻撃手段"
+					]
+				},
+				"cast_ka": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4これが人類最大の威力の攻撃手段"
+					]
+				},
+				"cast_l": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4これこそが究極の攻撃魔法"
+					]
+				},
+				"cast_la": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4これこそが究極の攻撃魔法"
+					]
+				},
+				"cast_m": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §4エクスプロージョン!"
+					]
+				}
+			}
+		}
+ 	}
+ }
