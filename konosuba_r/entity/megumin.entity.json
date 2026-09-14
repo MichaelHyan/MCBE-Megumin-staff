@@ -10,6 +10,9 @@
       "geometry": {
         "default": "geometry.megumin"
       },
+      "spawn_egg": {
+        "texture": "megumin_spawn_egg"
+      },
       "scripts": {
         "pre_animation": [
           "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"

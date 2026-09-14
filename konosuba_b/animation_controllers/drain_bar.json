@@ -1,0 +1,256 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.drain_bar":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"drain_touch_a":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') == 0 "},
+						{"drain_touch_b":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 0 && query.scoreboard('health') <= 10"},
+						{"drain_touch_c":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 10 && query.scoreboard('health') <= 20"},
+						{"drain_touch_d":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 20 && query.scoreboard('health') <= 30"},
+						{"drain_touch_e":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 30 && query.scoreboard('health') <= 40"},
+						{"drain_touch_f":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 40 && query.scoreboard('health') <= 50"},
+						{"drain_touch_g":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 50 && query.scoreboard('health') <= 60"},
+						{"drain_touch_h":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 60 && query.scoreboard('health') <= 70"},
+						{"drain_touch_i":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 70 && query.scoreboard('health') <= 80"},
+						{"drain_touch_j":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 80 && query.scoreboard('health') <= 90"},
+						{"drain_touch_k":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 0 && query.scoreboard('health') > 90 && query.scoreboard('health') <= 100"},
+						{"drain_touch_l":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') == 0 "},
+						{"drain_touch_m":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 0 && query.scoreboard('health') <= 10"},
+						{"drain_touch_n":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 10 && query.scoreboard('health') <= 20"},
+						{"drain_touch_o":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 20 && query.scoreboard('health') <= 30"},
+						{"drain_touch_p":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 30 && query.scoreboard('health') <= 40"},
+						{"drain_touch_q":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 40 && query.scoreboard('health') <= 50"},
+						{"drain_touch_r":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 50 && query.scoreboard('health') <= 60"},
+						{"drain_touch_s":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 60 && query.scoreboard('health') <= 70"},
+						{"drain_touch_t":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 70 && query.scoreboard('health') <= 80"},
+						{"drain_touch_u":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 80 && query.scoreboard('health') <= 90"},
+						{"drain_touch_v":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && query.scoreboard('health') > 90 && query.scoreboard('health') <= 100"}
+
+					]
+				},
+				"drain_touch_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4§7||||||||||"
+					]
+				},
+				"drain_touch_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4|§7|||||||||"
+					]
+				},
+				"drain_touch_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4||§7||||||||"
+					]
+				},
+				"drain_touch_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4|||§7|||||||"
+					]
+				},
+				"drain_touch_e": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4||||§7||||||"
+					]
+				},
+				"drain_touch_f": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4|||||§7|||||"
+					]
+				},
+				"drain_touch_g": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4||||||§7||||"
+					]
+				},
+				"drain_touch_h": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4|||||||§7|||"
+					]
+				},
+				"drain_touch_i": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4||||||||§7||"
+					]
+				},
+				"drain_touch_j": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4|||||||||§7|"
+					]
+				},
+				"drain_touch_k": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §4||||||||||§7"
+					]
+				},
+				"drain_touch_l": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1§7||||||||||"
+					]
+				},
+				"drain_touch_m": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1|§7|||||||||"
+					]
+				},
+				"drain_touch_n": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1||§7||||||||"
+					]
+				},
+				"drain_touch_o": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1|||§7|||||||"
+					]
+				},
+				"drain_touch_p": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1||||§7||||||"
+					]
+				},
+				"drain_touch_q": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1|||||§7|||||"
+					]
+				},
+				"drain_touch_r": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1||||||§7||||"
+					]
+				},
+				"drain_touch_s": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1|||||||§7|||"
+					]
+				},
+				"drain_touch_t": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1||||||||§7||"
+					]
+				},
+				"drain_touch_u": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1|||||||||§7|"
+					]
+				},
+				"drain_touch_v": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar §1||||||||||§7"
+					]
+				}
+			}
+		}
+ 	}
+ }

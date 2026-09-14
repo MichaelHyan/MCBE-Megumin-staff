@@ -9,12 +9,18 @@
 			"scripts": {
 				"animate": [
 					"skill",
-					"skill_recharge"
+					"skill_recharge",
+					"drain_bar",
+					"spark_pa",
+					"spark_pb"
 				]
 			},
 			"animations": {
 				"skill": "controller.animation.skill",
-				"skill_recharge": "controller.animation.skill_recharge"
+				"skill_recharge": "controller.animation.skill_recharge",
+				"drain_bar": "controller.animation.drain_bar",
+				"spark_pa": "controller.animation.spark_pa",
+				"spark_pb": "controller.animation.spark_pb"
 			} 
 		},
 		"component_groups": {

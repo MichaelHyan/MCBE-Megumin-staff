@@ -2,13 +2,13 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "items:mana_crystal",
+      "identifier": "items:staff_a",
       "category": "Nature"
     },
 
     "components": {
-      "minecraft:icon": "mana_crystal",
-      "minecraft:render_offsets": "mana_crystal"
+      "minecraft:icon": "staff_a",
+      "minecraft:render_offsets": "staff_a"
     }
   }
 }

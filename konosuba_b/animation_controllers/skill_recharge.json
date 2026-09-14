@@ -5,7 +5,18 @@
 			"states":{
 				"base_jeta":{
 					"transitions":[
+						{"cd":"query.scoreboard('charge') < 0"},
 						{"recharge":"query.scoreboard('mana') < 0"}
+					]
+				},
+				"cd": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/scoreboard players add @s charge 1"
 					]
 				},
 				"recharge": {

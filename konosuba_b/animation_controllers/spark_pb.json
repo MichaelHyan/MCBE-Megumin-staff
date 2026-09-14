@@ -1,0 +1,277 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.spark_pb":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"spark_a":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 0"},
+						{"spark_b":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 1"},
+						{"spark_c":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 2"},
+						{"spark_d":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 3"},
+						{"spark_e":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 4"},
+						{"spark_f":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 5"},
+						{"spark_g":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 6"},
+						{"spark_h":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 7"},
+						{"spark_i":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 8"},
+						{"spark_j":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 9"},
+						{"spark_k":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 10"},
+						{"spark_l":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 11"},
+						{"spark_m":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 12"},
+						{"spark_n":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 13"},
+						{"spark_o":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 14"},
+						{"spark_p":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 15"},
+						{"spark_q":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 16"},
+						{"spark_r":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 17"},
+						{"spark_s":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 18"},
+						{"spark_t":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 19"},
+						{"spark_u":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 20"},
+						{"spark_v":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 21"},
+						{"spark_w":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 22"},
+						{"spark_x":"query.get_equipped_item_name=='drain_touch' && query.is_using_item && query.scoreboard('drain') == 1 && math.random_integer(0,23) == 23"}
+					]
+				},
+				"spark_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~1 ~0.2 ~0"
+					]
+				},
+				"spark_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~-1 ~0.2 ~0"
+					]
+				},
+				"spark_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0 ~0.2 ~1"
+					]
+				},
+				"spark_d": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0 ~0.2 ~-1"
+					]
+				},
+				"spark_e": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0.7 ~0.2 ~0.7"
+					]
+				},
+				"spark_f": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~-0.7 ~0.2 ~0.7"
+					]
+				},
+				"spark_g": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0.7 ~0.2 ~-0.7"
+					]
+				},
+				"spark_h": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~-0.7 ~0.2 ~-0.7"
+					]
+				},
+				"spark_i": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~1 ~1.0 ~0"
+					]
+				},
+				"spark_j": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~-1 ~1.0 ~0"
+					]
+				},
+				"spark_k": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0 ~1.0 ~1"
+					]
+				},
+				"spark_l": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0 ~1.0 ~-1"
+					]
+				},
+				"spark_m": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0.7 ~1.0 ~0.7"
+					]
+				},
+				"spark_n": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~-0.7 ~1.0 ~0.7"
+					]
+				},
+				"spark_o": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0.7 ~1.0 ~-0.7"
+					]
+				},
+				"spark_p": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~-0.7 ~1.0 ~-0.7"
+					]
+				},
+				"spark_q": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~1 ~1.8 ~0"
+					]
+				},
+				"spark_r": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~-1 ~1.8 ~0"
+					]
+				},
+				"spark_s": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0 ~1.8 ~1"
+					]
+				},
+				"spark_t": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0 ~1.8 ~-1"
+					]
+				},
+				"spark_u": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0.7 ~1.8 ~0.7"
+					]
+				},
+				"spark_v": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~-0.7 ~1.8 ~0.7"
+					]
+				},
+				"spark_w": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~0.7 ~1.8 ~-0.7"
+					]
+				},
+				"spark_x": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:small_soul_fire_flame ~-0.7 ~1.8 ~-0.7"
+					]
+				}
+			}
+		}
+ 	}
+ }

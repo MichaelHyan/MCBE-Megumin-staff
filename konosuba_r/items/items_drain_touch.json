@@ -2,13 +2,13 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "items:mana_crystal",
+      "identifier": "items:drain_touch",
       "category": "Nature"
     },
 
     "components": {
-      "minecraft:icon": "mana_crystal",
-      "minecraft:render_offsets": "mana_crystal"
+      "minecraft:icon": "drain_touch",
+      "minecraft:render_offsets": "drain_touch"
     }
   }
 }

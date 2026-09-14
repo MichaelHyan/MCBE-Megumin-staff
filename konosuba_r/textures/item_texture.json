@@ -5,8 +5,17 @@
     "staff": {
       "textures": "textures/items/staff.png"
     },
+    "staff_a": {
+      "textures": "textures/items/staff_a.png"
+    },
     "steal": {
       "textures": "textures/items/steal.png"
+    },
+    "drain_touch": {
+      "textures": "textures/items/drain_touch.png"
+    },
+    "eris": {
+      "textures": "textures/items/eris.png"
     },
     "pantsa": {
       "textures": "textures/items/pantsa.png"
@@ -43,6 +52,18 @@
     },
     "mana_crystal": {
       "textures": "textures/items/mana_crystal.png"
+    },
+    "megumin_spawn_egg": {
+      "textures": "textures/items/megumin_spawn_egg.png"
+    },
+    "kazuma_spawn_egg": {
+      "textures": "textures/items/kazuma_spawn_egg.png"
+    },
+    "aqua_spawn_egg": {
+      "textures": "textures/items/aqua_spawn_egg.png"
+    },
+    "darkness_spawn_egg": {
+      "textures": "textures/items/darkness_spawn_egg.png"
     }
   }
 }

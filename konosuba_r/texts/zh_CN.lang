@@ -1,19 +1,23 @@
 item.items:staff.name=惠惠的法杖\n§r§b全新的精钢法杖，带有好闻的气息§r
-item.items:staff_name=阿库娅的法杖\n§r§b水之女神所有物§r
-item.items:steal.name=盗窃\n§r§b作为真-男女平等主义者，即使对方是女性，我也会毫不犹豫的使出飞踢，可不要大意了。\n在这种场合，我的『盗窃』可随时会暴走的。§r
+item.items:staff_a.name=阿库娅的法杖\n§r§b水之女神所有物§r
+item.items:steal.name=盗窃\n§r§b作为真-男女平等主义者\n即使对方是女性\n我也会毫不犹豫的使出飞踢\n可不要大意了\n在这种场合\n我的『盗窃』可随时会暴走的§r
 item.items:drain_touch.name=吸收之触\n§r§b呼哈哈哈哈哈哈！状况极佳！状况极佳啊！\n不知怎地我的状况好得不得了！今晚我要好好展现我的真本事啦！§r
 item.items:target=标靶\n§r§b指引爆裂魔法落点§r
 item.items:sword_d=达克妮斯的剑\n§r§b性能卓越的剑，可惜使用者是。。。§r
-item.items:mana_crystal.name=魔力水晶\n§r§b水之女神所有物§r
+item.items:mana_crystal.name=魔力水晶
 item.items:eris.name=厄里斯\n§r§b当地货币，以幸运女神的名字命名§r
-item.items:pantsa.name内裤
-item.items:pantsb.name内裤
-item.items:pantsc.name内裤
-item.items:pantsd.name内裤
-item.items:pantse.name内裤
-item.items:pantsf.name内裤
-item.items:pantsg.name内裤
-item.items:pantsh.name内裤
-item.items:pantsi.name内裤
-item.items:pantsj.name内裤
-item.items:pantsk.name内裤
+item.spawn_egg.entity.entity:aqua.name=生成 阿库娅
+item.spawn_egg.entity.entity:megumin.name=生成 惠惠
+item.spawn_egg.entity.entity:kazuma.name=生成 佐藤和真
+item.spawn_egg.entity.entity:darkness.name=生成 达克妮斯
+item.items:pantsa.name=内裤
+item.items:pantsb.name=内裤
+item.items:pantsc.name=内裤
+item.items:pantsd.name=内裤
+item.items:pantse.name=内裤
+item.items:pantsf.name=内裤
+item.items:pantsg.name=内裤
+item.items:pantsh.name=内裤
+item.items:pantsi.name=内裤
+item.items:pantsj.name=内裤
+item.items:pantsk.name=内裤

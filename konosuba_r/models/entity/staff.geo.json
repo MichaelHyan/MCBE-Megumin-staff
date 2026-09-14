@@ -1,5 +1,5 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.16.0",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -14,6 +14,7 @@
 				{
 					"name": "bone",
 					"pivot": [1, 1, 0],
+					"binding": "query.item_slot_to_bone_name(context.item_slot)",
 					"cubes": [
 						{"origin": [0, 1, -9], "size": [2, 2, 14], "uv": [9, 9]},
 						{"origin": [0, 1, 5], "size": [2, 2, 10], "uv": [54, 58]},
