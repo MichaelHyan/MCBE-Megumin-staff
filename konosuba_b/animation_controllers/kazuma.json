@@ -5,9 +5,9 @@
 			"states":{
 				"base_jeta":{
 					"transitions":[
-						{"greet_a":"query.life_time == 1 && math.random_integer(0,2) == 0"},
-						{"greet_b":"query.life_time == 1 && math.random_integer(0,2) == 1"},
-						{"greet_c":"query.life_time == 1 && math.random_integer(0,2) == 2"}
+						{"greet_a":"query.life_time == 1 && math.random_integer(0,5) == 0"},
+						{"greet_b":"query.life_time == 1 && math.random_integer(0,5) == 1"},
+						{"greet_c":"query.life_time == 1 && math.random_integer(0,5) == 2 || math.random_integer(0,5) == 3"}
 					]
 				},
 				"greet_a": {

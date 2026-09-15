@@ -5,8 +5,8 @@
 			"states":{
 				"base_jeta":{
 					"transitions":[
-						{"greet_a":"query.life_time == 1 && math.random_integer(0,1) == 0"},
-						{"greet_b":"query.life_time == 1 && math.random_integer(0,1) == 1"}
+						{"greet_a":"query.life_time == 1 && math.random_integer(0,2) == 0"},
+						{"greet_b":"query.life_time == 1 && math.random_integer(0,2) == 1"}
 					]
 				},
 				"greet_a": {

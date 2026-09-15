@@ -7,7 +7,8 @@
 					"transitions":[
 						{"cast_a":"query.life_time == 1"},
 						{"cast_aa":"query.life_time == 2"},
-						{"cast_b":"query.life_time == 4"},
+						{"cast_ab":"query.life_time == 4"},
+						{"cast_b":"query.life_time == 5"},
 						{"cast_ba":"query.life_time == 6"},
 						{"cast_c":"query.life_time == 8"},
 						{"cast_d":"query.life_time == 9"},
@@ -39,6 +40,16 @@
 					]
 				},
 				"cast_aa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @a[r=10] actionbar §c黒より黒く闇より暗き漆黒に"
+					]
+				},
+				"cast_ab": {
 					"transitions": [
 							{
 								"base_jeta": "(1.0)"

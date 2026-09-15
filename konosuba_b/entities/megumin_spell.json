@@ -59,6 +59,10 @@
       "minecraft:equipment": {
         "table": "partner/staff.json"
       },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
       "minecraft:type_family": {
         "family": [
           "mob",
