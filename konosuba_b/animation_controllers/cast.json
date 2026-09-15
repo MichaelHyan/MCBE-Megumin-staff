@@ -36,7 +36,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c黒より黒く闇より暗き漆黒に"
+						"/title @a[r=50] actionbar §c黒より黒く闇より暗き漆黒に"
 					]
 				},
 				"cast_aa": {
@@ -46,7 +46,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c黒より黒く闇より暗き漆黒に"
+						"/title @a[r=50] actionbar §c黒より黒く闇より暗き漆黒に"
 					]
 				},
 				"cast_ab": {
@@ -56,7 +56,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c黒より黒く闇より暗き漆黒に"
+						"/title @a[r=50] actionbar §c黒より黒く闇より暗き漆黒に"
 					]
 				},
 				"cast_b": {
@@ -66,7 +66,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c我が深紅の混淆を望みたもう"
+						"/title @a[r=50] actionbar §c我が深紅の混淆を望みたもう"
 					]
 				},
 				"cast_ba": {
@@ -76,7 +76,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c我が深紅の混淆を望みたもう"
+						"/title @a[r=50] actionbar §c我が深紅の混淆を望みたもう"
 					]
 				},
 				"cast_c": {
@@ -86,7 +86,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c覚醒のとき来たれり"
+						"/title @a[r=50] actionbar §c覚醒のとき来たれり"
 					]
 				},
 				"cast_d": {
@@ -96,7 +96,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c無謬の境界に落ちし理"
+						"/title @a[r=50] actionbar §c無謬の境界に落ちし理"
 					]
 				},
 				"cast_da": {
@@ -106,7 +106,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c無謬の境界に落ちし理"
+						"/title @a[r=50] actionbar §c無謬の境界に落ちし理"
 					]
 				},
 				"cast_e": {
@@ -116,7 +116,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c無行の歪みとなりて現出せよ"
+						"/title @a[r=50] actionbar §c無行の歪みとなりて現出せよ"
 					]
 				},
 				"cast_ea": {
@@ -126,7 +126,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c無行の歪みとなりて現出せよ"
+						"/title @a[r=50] actionbar §c無行の歪みとなりて現出せよ"
 					]
 				},
 				"cast_f": {
@@ -136,7 +136,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c踊れ 踊れ 踊れ"
+						"/title @a[r=50] actionbar §c踊れ 踊れ 踊れ"
 					]
 				},
 				"cast_fa": {
@@ -146,7 +146,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c踊れ 踊れ 踊れ"
+						"/title @a[r=50] actionbar §c踊れ 踊れ 踊れ"
 					]
 				},
 				"cast_g": {
@@ -156,7 +156,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c我が力の奔流に望むは崩壊なり"
+						"/title @a[r=50] actionbar §c我が力の奔流に望むは崩壊なり"
 					]
 				},
 				"cast_ga": {
@@ -166,7 +166,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c我が力の奔流に望むは崩壊なり"
+						"/title @a[r=50] actionbar §c我が力の奔流に望むは崩壊なり"
 					]
 				},
 				"cast_h": {
@@ -176,7 +176,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c並ぶ者なき崩壊なり"
+						"/title @a[r=50] actionbar §c並ぶ者なき崩壊なり"
 					]
 				},
 				"cast_i": {
@@ -186,7 +186,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c万象等しく灰塵に帰し"
+						"/title @a[r=50] actionbar §c万象等しく灰塵に帰し"
 					]
 				},
 				"cast_j": {
@@ -196,7 +196,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §c深淵より来たれ"
+						"/title @a[r=50] actionbar §c深淵より来たれ"
 					]
 				},
 				"cast_k": {
@@ -206,7 +206,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §cこれが人類最大の威力の攻撃手段"
+						"/title @a[r=50] actionbar §cこれが人類最大の威力の攻撃手段"
 					]
 				},
 				"cast_ka": {
@@ -216,7 +216,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §cこれが人類最大の威力の攻撃手段"
+						"/title @a[r=50] actionbar §cこれが人類最大の威力の攻撃手段"
 					]
 				},
 				"cast_l": {
@@ -226,7 +226,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §cこれこそが究極の攻撃魔法"
+						"/title @a[r=50] actionbar §cこれこそが究極の攻撃魔法"
 					]
 				},
 				"cast_la": {
@@ -236,7 +236,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §cこれこそが究極の攻撃魔法"
+						"/title @a[r=50] actionbar §cこれこそが究極の攻撃魔法"
 					]
 				},
 				"cast_m": {
@@ -246,7 +246,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @a[r=10] actionbar §cエクスプロージョン!"
+						"/title @a[r=50] actionbar §cエクスプロージョン!"
 					]
 				}
 			}
