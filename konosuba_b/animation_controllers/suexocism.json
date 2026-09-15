@@ -15,7 +15,6 @@
 							}
 					],
 					"on_entry": [
-						"/kill @e[type=entity:exocism]",
 						"/summon entity:exocism"
 					]
 				}
