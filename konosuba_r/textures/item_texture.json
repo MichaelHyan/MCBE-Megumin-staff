@@ -8,6 +8,9 @@
     "staff_a": {
       "textures": "textures/items/staff_a.png"
     },
+    "sword_d": {
+      "textures": "textures/items/sword_d.png"
+    },
     "steal": {
       "textures": "textures/items/steal.png"
     },
