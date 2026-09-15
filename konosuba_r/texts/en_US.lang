@@ -21,3 +21,7 @@ item.items:pantsh.name=underwear
 item.items:pantsi.name=underwear
 item.items:pantsj.name=underwear
 item.items:pantsk.name=underwear
+entity.entity:aqua.name=Aqua
+entity.entity:megumin.name=Megumin
+entity.entity:kazuma.name=Sato Kazuma
+entity.entity:darkness.name=Darkness
